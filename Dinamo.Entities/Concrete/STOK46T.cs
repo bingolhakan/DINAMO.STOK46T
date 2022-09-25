@@ -1,6 +1,7 @@
 ﻿using Dinamo.Entities.Abstract;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace Dinamo.Entities.Concrete
 {
     public class STOK46T : IEntity
     {
+        [Key]
         public string EVRAKNO { get; set; }
         public string TRNUM { get; set; }
         public string SRNUM { get; set; }
@@ -16,61 +18,61 @@ namespace Dinamo.Entities.Concrete
         public string TARIH { get; set; }
         public string NOTE0 { get; set; }
         public string NOTE1 { get; set; }
-        public float OR_FIYAT { get; set; }
+        public double OR_FIYAT { get; set; }
         public string PRICEUNIT { get; set; }
-        public float SF_MIKTAR { get; set; }
-        public float OR_TUTAR { get; set; }
+        public double SF_MIKTAR { get; set; }
+        public double OR_TUTAR { get; set; }
         public string ACIKKAPALI { get; set; }
-        public float SF_OLDTESLIMALINAN { get; set; }
+        public double SF_OLDTESLIMALINAN { get; set; }
         public string RTESTARIH { get; set; }
         public string TOLERANS { get; set; }
         public string RKAPANISTARIH { get; set; }
         public string TOLERANSTYPE { get; set; }
         public string CH_KODU { get; set; }
-        public int ODEMEGUNU { get; set; }
+        public Int16 ODEMEGUNU { get; set; }
         public string ODEMESEKLI { get; set; }
         public string FOKOD { get; set; }
-        public float KDV_ORANI { get; set; }
+        public double KDV_ORANI { get; set; }
         public string KURCALCTYPE { get; set; }
         public string ISKONTOTIPI_1 { get; set; }
         public string ISKONTOTIPI_2 { get; set; }
         public string ISKONTOTIPI_3 { get; set; }
         public string ISKONTOTIPI_4 { get; set; }
-        public float YISKONTO_1 { get; set; }
-        public float YISKONTO_2 { get; set; }
-        public float YISKONTO_3 { get; set; }
-        public float YISKONTO_4 { get; set; }
-        public float OR_TISKONTO_1 { get; set; }
-        public float OR_TISKONTO_2 { get; set; }
-        public float OR_TISKONTO_3 { get; set; }
-        public float OR_TISKONTO_4 { get; set; }
-        public float OR_XISKONTO_TUTARI { get; set; }
-        public float OR_ISKONTOLU_TUTAR { get; set; }
-        public float ISKONTO_EFEKTIF { get; set; }
-        public float OR_X_KDVTUT { get; set; }
-        public float OR_X_KDVTUT_US { get; set; }
-        public float OR_KDVTUT_EFEKTIF { get; set; }
-        public float OR_KDVDAHILTUTAR { get; set; }
-        public float KUR { get; set; }
-        public float FATURALANAN_TISKONTO { get; set; }
-        public float FATURALANAN_ORKUR { get; set; }
-        public float FATURALANAN_TL { get; set; }
+        public double YISKONTO_1 { get; set; }
+        public double YISKONTO_2 { get; set; }
+        public double YISKONTO_3 { get; set; }
+        public double YISKONTO_4 { get; set; }
+        public double OR_TISKONTO_1 { get; set; }
+        public double OR_TISKONTO_2 { get; set; }
+        public double OR_TISKONTO_3 { get; set; }
+        public double OR_TISKONTO_4 { get; set; }
+        public double OR_XISKONTO_TUTARI { get; set; }
+        public double OR_ISKONTOLU_TUTAR { get; set; }
+        public double ISKONTO_EFEKTIF { get; set; }
+        public double OR_X_KDVTUT { get; set; }
+        public double OR_X_KDVTUT_US { get; set; }
+        public double OR_KDVTUT_EFEKTIF { get; set; }
+        public double OR_KDVDAHILTUTAR { get; set; }
+        public double KUR { get; set; }
+        public double FATURALANAN_TISKONTO { get; set; }
+        public double FATURALANAN_ORKUR { get; set; }
+        public double FATURALANAN_TL { get; set; }
         public string GK_1 { get; set; }
         public string GK_2 { get; set; }
         public string GK_3 { get; set; }
         public string REV_RTESTARIH { get; set; }
         public string REV_TAHVALORTARIH { get; set; }
         public string TAHVALORTARIH { get; set; }
-        public float SF_SEVKDEMIK { get; set; }
-        public float SF_NEWTESLIMALINAN { get; set; }
-        public float SF_FATURALANANMIKTAR { get; set; }
-        public float SF_IADEALINANMIKTAR { get; set; }
-        public float SF_ODONEMKAPANANMIK { get; set; }
-        public float SF_NETKAPANANMIK { get; set; }
+        public double SF_SEVKDEMIK { get; set; }
+        public double SF_NEWTESLIMALINAN { get; set; }
+        public double SF_FATURALANANMIKTAR { get; set; }
+        public double SF_IADEALINANMIKTAR { get; set; }
+        public double SF_ODONEMKAPANANMIK { get; set; }
+        public double SF_NETKAPANANMIK { get; set; }
         public string HOLDTOSEVK { get; set; }
         public string STATUS { get; set; }
-        public float SF_PMIKTAR { get; set; }
-        public float SF_IMIKTAR { get; set; }
+        public double SF_PMIKTAR { get; set; }
+        public double SF_IMIKTAR { get; set; }
         public string RTALEPTARIH { get; set; }
         public string RTALEPEDILENTESTARIH { get; set; }
         public string TALEPTEBULUNANBOLUM { get; set; }
@@ -81,7 +83,7 @@ namespace Dinamo.Entities.Concrete
         public string ATTHECUSTOMSTARIH { get; set; }
         public string NOTIFYWHO { get; set; }
         public string STOK_NONSTOK { get; set; }
-        public float SF_SATICININ_GOND { get; set; }
+        public double SF_SATICININ_GOND { get; set; }
         public string FATURANO { get; set; }
         public string FATURA_TARIH { get; set; }
         public string DOSYANO { get; set; }
@@ -110,17 +112,17 @@ namespace Dinamo.Entities.Concrete
         public string ARTIKEL_REF_TARIH_6 { get; set; }
         public string ARTIKEL_REF_TARIH_7 { get; set; }
         public string ARTIKEL_REF_TARIH_8 { get; set; }
-        public float ARTIKEL_REF_NUM_1 { get; set; }
-        public float ARTIKEL_REF_NUM_2 { get; set; }
-        public float ARTIKEL_REF_NUM_3 { get; set; }
-        public float ARTIKEL_REF_NUM_4 { get; set; }
-        public float ARTIKEL_REF_NUM_5 { get; set; }
-        public float ARTIKEL_REF_NUM_6 { get; set; }
-        public float ARTIKEL_REF_NUM_7 { get; set; }
-        public float ARTIKEL_REF_NUM_8 { get; set; }
+        public double ARTIKEL_REF_NUM_1 { get; set; }
+        public double ARTIKEL_REF_NUM_2 { get; set; }
+        public double ARTIKEL_REF_NUM_3 { get; set; }
+        public double ARTIKEL_REF_NUM_4 { get; set; }
+        public double ARTIKEL_REF_NUM_5 { get; set; }
+        public double ARTIKEL_REF_NUM_6 { get; set; }
+        public double ARTIKEL_REF_NUM_7 { get; set; }
+        public double ARTIKEL_REF_NUM_8 { get; set; }
         public string VTKOLON { get; set; }
         public string VTSATIR { get; set; }
-        public float SF_STOK_MIKTAR { get; set; }
+        public double SF_STOK_MIKTAR { get; set; }
         public string SF_SF_UNIT { get; set; }
         public string SF_AUTOCALC { get; set; }
         public string SF_VRI_RECETE { get; set; }
@@ -135,20 +137,20 @@ namespace Dinamo.Entities.Concrete
         public string TLOG_LOGTIME { get; set; }
         public string TLOG_PSTATION { get; set; }
         public string TLOG_TVERSION { get; set; }
-        public float ASORTI_MIKTARI { get; set; }
+        public double ASORTI_MIKTARI { get; set; }
         public string VERARTTIPI_1 { get; set; }
         public string VERARTTIPI_2 { get; set; }
         public string VERARTTIPI_3 { get; set; }
         public string VERARTTIPI_4 { get; set; }
-        public float YVERART_1 { get; set; }
-        public float YVERART_2 { get; set; }
-        public float YVERART_3 { get; set; }
-        public float YVERART_4 { get; set; }
-        public float OR_TVERART_1 { get; set; }
-        public float OR_TVERART_2 { get; set; }
-        public float OR_TVERART_3 { get; set; }
-        public float OR_TVERART_4 { get; set; }
-        public float OR_IVD_KH_TUTAR { get; set; }
+        public double YVERART_1 { get; set; }
+        public double YVERART_2 { get; set; }
+        public double YVERART_3 { get; set; }
+        public double YVERART_4 { get; set; }
+        public double OR_TVERART_1 { get; set; }
+        public double OR_TVERART_2 { get; set; }
+        public double OR_TVERART_3 { get; set; }
+        public double OR_TVERART_4 { get; set; }
+        public double OR_IVD_KH_TUTAR { get; set; }
         public string KULLANIM_YERI { get; set; }
         public string KDV_NOCALC { get; set; }
         public string FASON10 { get; set; }
@@ -157,7 +159,7 @@ namespace Dinamo.Entities.Concrete
         public string MRPICINSABITLEME10 { get; set; }
         public string RECETESABIT10 { get; set; }
         public string PRICEUNIT_DT { get; set; }
-        public float SUGGESTED_MIKTAR { get; set; }
+        public double SUGGESTED_MIKTAR { get; set; }
         public string TESISKODU { get; set; }
         public string D_ID { get; set; }
         public string D_ID_KAYNAK { get; set; }
@@ -168,7 +170,7 @@ namespace Dinamo.Entities.Concrete
         public string CHSIPANO { get; set; }
         public string SPSTATUSU { get; set; }
         public string SIRALIKAPATMADISI { get; set; }
-        public float MIKTAR_DT { get; set; }
+        public double MIKTAR_DT { get; set; }
         public string UNIT_DT { get; set; }
         public string NEICIN_MMPS10T { get; set; }
         public string NEICIN_MMPS10TT { get; set; }
@@ -190,9 +192,9 @@ namespace Dinamo.Entities.Concrete
         public string REFTEXT02 { get; set; }
         public string REFTEXT03 { get; set; }
         public string KK_KONTOL_PLANI { get; set; }
-        public float REFNUM01 { get; set; }
-        public float REFNUM02 { get; set; }
-        public float REFNUM03 { get; set; }
+        public double REFNUM01 { get; set; }
+        public double REFNUM02 { get; set; }
+        public double REFNUM03 { get; set; }
         public string REFTARIH1 { get; set; }
         public string REFTARIH2 { get; set; }
         public string REFTARIH3 { get; set; }
@@ -200,8 +202,8 @@ namespace Dinamo.Entities.Concrete
         public string TAX_SPC { get; set; }
         public string ONAY { get; set; }
         public string SF_NETKAPANANMIK_CM { get; set; }
-        public float SF_MN_KAPATILAN_MIK { get; set; }
-        public float SF_MN_ACILAN_MIK { get; set; }
+        public double SF_MN_KAPATILAN_MIK { get; set; }
+        public double SF_MN_ACILAN_MIK { get; set; }
         public string KAPANMA_CM { get; set; }
         public string D7ROWVERSION { get; set; }
     }

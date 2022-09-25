@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dinamo.DAL\Dinamo.DAL.csproj" />
+    <ProjectReference Include="..\Dinamo.Entities\Dinamo.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
